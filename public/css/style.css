@@ -1,0 +1,200 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto Bk", "Open Sans", Arial, serif;
+    color: #04BF8A;
+}
+body{
+    background-image: url("../img/background.jpg") ;
+    background-color: #00010D;
+    background-size: cover;
+}
+h1{
+    color: #389BF2;
+    font-size: 35px;
+}
+input{
+    font-size: 16px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #04BF8A;
+    border: #04BF8A 1px solid;
+    border-radius: 10px;
+    background-color: rgba(4, 191, 138, 0.13);
+    text-align: center;
+}
+.pageTitle{
+    text-align: center;
+}
+/*  ===Footer===    */
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    margin-top: 10%;
+    width: 100%;
+    color: #F2561D;
+}
+/*  ===Navbar===    */
+.navbarDiv {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 1%;
+}
+.navbarDiv a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #04BF8A;
+    display: block;
+    transition: 0.3s;
+}
+
+.navbarDiv a:hover {
+    color: #0afdb2;
+    transform: scale(1.1,1.1);
+    background-color: rgba(4, 191, 138, 0.13);
+}
+
+.navbarIcon{
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 3%;
+    transition-duration: 0.5s;
+}
+.navbarIcon:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+.navbarClose{
+    height: 3%;
+    right: 2%;
+    float:right;
+    margin: 10%;
+    transition-duration: 0.5s;
+}
+.navbarClose:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+.navbarId{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.navbarProfilePic img{
+    height: 8vh;
+}
+.logout {
+    transition-duration: 0.5s;
+    background-color: rgba(0,0,0,0);
+    border: rgba(0,0,0,0);
+    color: #04BF8A;
+    font-size: 17px;
+}
+.logout:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+    color: #ce1616;
+}
+/*  ===Index=== */
+.indexDiv{
+    display: flex;
+    margin: auto;
+    margin-top: 12%;
+    flex-direction: column;
+    color: #04BF8A;
+    padding: 2%;
+    padding-bottom: 1%;
+    border: #F2561D 1px solid;
+    border-radius: 10px;
+    background-color: rgba(242, 86, 29, 0.18);
+    width: 40%;
+    align-items: center;
+    text-align: center;
+}
+.indexLogo{
+    height: 10%;
+    width: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.indexButton{
+    margin-top: 20%;
+    padding: 2%;
+    transition-duration: 0.5s;
+    background-color: rgba(0,0,0,0);
+    border: rgba(0,0,0,0);
+    color: #F2561D;
+    font-size: 20px;
+}
+.indexButton:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+.indexLink{
+    margin-top: 3%;
+    font-size: 10px;
+    color: #F2561D;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.indexLink:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.1,1.1);
+}
+/*  ===Inscription===   */
+.inscriptionDiv{
+    display: flex;
+    margin: auto;
+    margin-top: 9%;
+    flex-direction: column;
+    color: #04BF8A;
+    padding: 2%;
+    padding-bottom: 1%;
+    border: #F2561D 1px solid;
+    border-radius: 10px;
+    background-color: rgba(242, 86, 29, 0.18);
+    width: 40%;
+    align-items: center;
+    text-align: center;
+}
+.inscriptionButton{
+    margin-top: 20%;
+    padding: 2%;
+    transition-duration: 0.5s;
+    background-color: rgba(0,0,0,0);
+    border: rgba(0,0,0,0);
+    color: #F2561D;
+    font-size: 20px;
+}
+.inscriptionButton:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+.homeImg{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 40%;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+.homeImg:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+    box-shadow: 10px 10px 20px #00010D;
+}
