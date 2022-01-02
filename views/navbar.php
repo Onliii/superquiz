@@ -7,14 +7,14 @@
     <br><br><br><br>
     <a href="index.php?page=home">Thèmes</a>
     <a href="index.php?page=leaderboard">LeaderBoard</a>
-    <a href="#">AdminPanel</a>
+    <?php if ($_SESSION['admin']==1){echo ("<a href='#'>AdminPanel</a>");} ?>
     <div class="navbarId">
         <div class="navbarProfilePic">
             <img src="public/img/user.png">
         </div>
         <div class="navbarProfile">
-            <p>Onli</p>
-            <p>Administrateur</p>
+            <p><?php echo($_SESSION['nickname']); ?></p>
+            <p><?php echo($_SESSION['role']); ?></p>
             <button onclick="window.location.href='\index.php?page=logout'" class="logout">Déconnexion</button>
         </div>
     </div>

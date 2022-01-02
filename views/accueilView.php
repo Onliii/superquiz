@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="icon" href="public/img/brain.png">
+    <script src="../public/js/errorConnexion.js"></script>
 </head>
 <body class="index">
 
@@ -12,16 +13,16 @@
     <h1 class="indexWelcome">Bienvenue sur SuperQuiz !</h1>
     <img src="public/img/brain.png" class="indexLogo">
     <h2 class="indexConnecting">Connectez-vous pour jouer !</h2>
-    <form>
+    <form method="post" action="">
         <label class="indexLabel">Pseudo :</label>
         <br>
-        <input type="text">
+        <input type="text" name="login">
         <br>
         <label class="indexLabel">Mot de passe :</label>
         <br>
-        <input type="password">
+        <input type="password" name="pwd">
         <br>
-        <button class="indexButton">Connexion</button>
+        <button class="indexButton" type="submit" id="connecting">Connexion</button>
     </form>
     <a href="index.php?page=inscription" class="indexLink">Vous n'avez pas de compte ?</a>
 </div>

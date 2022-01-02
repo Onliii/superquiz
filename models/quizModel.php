@@ -16,7 +16,7 @@ class Quiz
 
     public static function getDrawnQuestion($questionNumber)
     {
-        require('private/db.php');
+        require_once('private/db.php');
 
         $requete = $db->prepare("SELECT * FROM quiz WHERE num_quest = $questionNumber");
         $requete->execute();

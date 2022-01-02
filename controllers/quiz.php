@@ -2,6 +2,12 @@
 require_once('models/quizModel.php');
 function quizPage(){
     try{
+
+        if ($_SESSION['log']==false){
+            header('Location: index.php');
+        }
+
+
         $max_quest = 10; // Nbre maximum de questions à poser par quiz
         $nbr_rec = Quiz::getAllCountQuestion(); // nombre de records dans la table
 
@@ -34,6 +40,7 @@ function quizPage(){
 
             echo "Votre quiz est terminé avec le score de <b>".$score." / ".$max_quest."</B><br>";
             echo '<a href="index.php?page=home"> Je voudrais refaire un autre quiz </a>';
+
             unset($_SESSION["nq"],$_SESSION["tab_tir"],$_SESSION["score"],$_SESSION["ok"]);
 
         }

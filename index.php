@@ -32,5 +32,7 @@ else {
     {
         header('Location: index.php?page=quiz&rep=' . $_GET['rep']);
     }
-    acceuil();
+    else{
+        acceuil();
+    }
 }
