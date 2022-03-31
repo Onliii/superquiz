@@ -1,4 +1,4 @@
-<script src="../public/js/hideNavbar.js"></script>
+<script src="public/js/hideNavbar.js"></script>
 
 <div id="nav" class="navbarDiv">
 
@@ -7,7 +7,7 @@
     <br><br><br><br>
     <a href="index.php?page=home">Thèmes</a>
     <a href="index.php?page=leaderboard">LeaderBoard</a>
-    <?php if ($_SESSION['admin']==1){echo ("<a href='#'>AdminPanel</a>");} ?>
+    <?php if ($_SESSION['admin']==1){echo ("<a href='index.php?page=adminpanel'>AdminPanel</a>");} ?>
     <div class="navbarId">
         <div class="navbarProfilePic">
             <img src="public/img/user.png">

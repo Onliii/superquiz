@@ -9,6 +9,7 @@ require ('controllers/home.php');
 require ('controllers/quiz.php');
 require ('controllers/leaderboard.php');
 require ('controllers/function.php');
+require ('controllers/adminController.php');
 
 if (isset($_GET['page'])){
     if ($_GET['page']=='inscription'){
@@ -20,8 +21,35 @@ if (isset($_GET['page'])){
     if ($_GET['page']=='quiz'){
         quizPage();
     }
+    if ($_GET['page']=='result'){
+        result();
+    }
     if ($_GET['page']=='leaderboard'){
         leaderboard();
+    }
+    if ($_GET['page']=='adminpanel'){
+        if (empty($_GET['iddel'])&&empty($_GET['idedit'])&&empty($_GET['idact'])&&empty($_GET['quesdel'])){
+            adminpanel();
+        }else if (isset($_GET['iddel'])){
+            delPlayer();
+            adminpanel();
+        }else if (isset($_GET['idact'])){
+            getActivePlayer();
+            adminpanel();
+        }
+        else if (isset($_GET['quesdel'])){
+            deleteQuestion();
+            adminpanel();
+        }
+    }
+    if ($_GET['page']=='editplayer'){
+        editplayerAffichage();
+    }
+    if ($_GET['page']=='editquestion'){
+        editQuestionAffichage();
+    }
+    if ($_GET['page']=='addquestion'){
+        addQuestionAffichage();
     }
     if ($_GET['page']=='logout'){
         logout();
